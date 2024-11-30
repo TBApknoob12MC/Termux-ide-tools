@@ -24,7 +24,6 @@ mv 0xProtoNerdFont-Bold.ttf $HOME/.termux/font.ttf
 cd .. 
 rm -rf fonts
 git clone https://github.com/NvChad/starter ~/.config/nvim 
-nvim
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
