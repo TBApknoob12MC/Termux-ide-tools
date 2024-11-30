@@ -8,9 +8,12 @@ That's why I made this script (maybe cringe)
 Neovim with NVchad included :D
 
 PREREQUISITES:
-Termux ( gplay is ded so get from github or f-droid - fresh install recommended )
-internet ( maybe... 500 mb of data)
-some storage (minimum 2 gigs if u wanna install more application )
+Termux (gplay is ded so get from github or f-droid - fresh install recommended)
+
+internet (maybe... 500 mb of data)
+
+
+some storage (minimum 2 gigs if u wanna install more application)
 
 INSTALLATION:
 ```sh
