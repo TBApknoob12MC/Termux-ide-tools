@@ -2,13 +2,17 @@ clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update &&apt upgrade -y
 apt install zsh make nmap tmux proot-distro asciinema gotty gnupg unzip neovim git tig python3 wget figlet nodejs newsboat irssi lynx -y 
-echo 'clear&& GREEN="\e[92m"&& printf "${GREEN}" && figlet -f standard "TERMUX" && figlet -f standard "AS A"&& figlet -f standard "DISTRO"&& STOP="\e[0m" && printf "${STOP}"' >> $PREFIX/bin/cls
+echo 'clear&& GREEN="\e[92m"&& printf "${GREEN}" && figlet -f standard "TERMUX" && STOP="\e[0m" && printf "${STOP}" && androfetch' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
 mkdir $HOME/.newsboat
 echo "https://howtogeek.com/feed/" >> $HOME/.newsboat/urls
 pd i alpine
 curl https://zyedidia.github.io/eget.sh | sh 
 mv eget $PREFIX/bin/eget
+curl -O https://raw.githubusercontent.com/laraib07/androfetch/main/androfetch
+chmod u+x androfetch
+mv androfetch $PREFIX/bin/
+androfetch -i
 curl -fsSL https://raw.githubusercontent.com/sigoden/upt/main/install.sh | sh -s -- --to $PREFIX/bin
 wget git.io/trans 
 chmod +x trans 
