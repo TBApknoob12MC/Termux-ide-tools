@@ -17,13 +17,13 @@ some storage (minimum 2 gigs if u wanna install more application)
 
 INSTALLATION:
 ```sh
-$ curl https://github.com/TBApknoob12MC/Termux-improver/blob/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/install.sh | bash
 ```
 
-wait some time and then when you see nvim opening and see like 'tree-sitter : installed' at the bottom of termux(from my memory),type :q until you get out of nvim
+wait some time and then when you see nvim opening and see like 'tree-sitter : installed' at the bottom of termux(from my memory),type :q multiple times until you get out of nvim
 
-after that when oh my zsh asks about making zsh default shell,type 'y' and you are in zsh - type 'exit' to exit from the shell or else the bash script won't continue
+after that when oh my zsh asks about making zsh default shell,type 'y' and you are in zsh - type 'exit' to exit from the zsh or else the bash script won't continue
 
-after that when you see '~$',type exit and reopen termux.
+after that when you see '~$', if you are able to type, then type exit and reopen termux.
 
 u got a good looking ide/experiment sandbox
