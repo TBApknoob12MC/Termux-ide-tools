@@ -6,9 +6,8 @@ echo "[3] multi chat server "
 echo "[4] shell server "
 echo "[5] shell client "
 echo "[6] html server "
-echo "[7] web faker "
-echo "[8] html download "
-echo "[9] exit "
+echo "[7] html download "
+echo "[8] exit "
 read -p "select option: " ch
 
 if [ $ch -eq 1 ];then
@@ -34,13 +33,6 @@ elif [ $ch -eq 6 ];then
     for ((;;));
     do
         { echo -e 'HTTP/1.1 200 OK\r\n'; cat $HOME/.ncat-fe/html/${file}.html; } | ncat -l -p $webport
-    done
-elif [ $ch -eq 7 ];then
-    read -p "enter url:" fakeurl
-    read -p "enter port:" fakeport
-    for ((;;));
-    do
-        { echo -e 'HTTP/1.1 200 OK\r\n'; curl ${fakeurl}; } | ncat -l -p $fakeport
     done
 elif [ $ch -eq 8 ];then
     read -p "enter url to download:" url
