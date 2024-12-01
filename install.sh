@@ -1,7 +1,7 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y
-apt install zsh make sox nmap tmux proot-distro asciinema cmatrix gotty gnupg unzip neovim git tig python3 ruby wget figlet nodejs newsboat irssi lynx -y
+apt install zsh sl cowsay make sox nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim git tig python3 ruby wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat 
 echo 'clear && GREEN="\e[92m"&& printf "${GREEN}" && figlet -f standard "TERMUX" && STOP="\e[0m" && printf "${STOP}" && androfetch' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
