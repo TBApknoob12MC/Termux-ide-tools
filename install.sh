@@ -30,12 +30,12 @@ mv 0xProtoNerdFont-Bold.ttf $HOME/.termux/font.ttf
 cd .. 
 rm -rf fonts
 git clone https://github.com/NvChad/starter ~/.config/nvim 
-sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
+curl -fsSL https://install.ohmyz.sh/ | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
 sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' $HOME/.zshrc 
 wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme 
-sed -i '/ZSH_THEME=robbyrussell/c\ZSH_THEME="kali-like"' $HOME/.zshrc
+sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
 exit
