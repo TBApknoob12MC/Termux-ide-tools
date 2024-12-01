@@ -1,4 +1,4 @@
-# Termux-improver
+# Termux-ide-tools
 Shell scripts automating installation(and much more) of (nvchad?) things so I don't break my bone with ampersand 
 
 It is kind of like termux desktop, but I feel that gui ide on termux is kinda bloat and nonproductive.
@@ -24,12 +24,12 @@ INSTALLATION:
 main script:
 
 ```sh
-curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/install.sh | bash
 ```
 if you want ncat-fe alone:
 
 ```sh
- curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/ncfe-install.sh | bash
+ curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/ncfe-install.sh | bash
 ```
 
 after that when oh my zsh asks about making zsh default shell,type 'y' and you are in zsh - type 'exit' to exit from the zsh or else the bash script won't continue
