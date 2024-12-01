@@ -34,11 +34,11 @@ elif [ $ch -eq 6 ];then
     do
         { echo -e 'HTTP/1.1 200 OK\r\n'; cat $HOME/.ncat-fe/html/${file}.html; } | ncat -l -p $webport
     done
-elif [ $ch -eq 8 ];then
+elif [ $ch -eq 7 ];then
     read -p "enter url to download:" url
     read -p "enter filename:" fname
     wget -O $HOME/.ncat-fe/html/${fname}.html $url
-elif [ $ch -eq 9 ];then
+elif [ $ch -eq 8 ];then
     echo "exiting in 5 secs"
     sleep 5
     exit
