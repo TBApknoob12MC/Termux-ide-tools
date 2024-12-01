@@ -41,3 +41,11 @@ after reopening type nvim
 wait some time and then when you see nvim opening and see like 'tree-sitter : installed' at the bottom of termux(from my memory),type :q multiple(3) times until you get out of nvim
 
 u got a good looking ide/experiment sandbox
+
+if you don't want to type exit twice as zsh is invoked inside bash, try changing shell to zsh the right way: 
+
+```sh
+ rm .profile && chsh
+```
+
+type zsh in the prompt to change shell and restart 
