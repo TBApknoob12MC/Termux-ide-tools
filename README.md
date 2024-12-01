@@ -11,7 +11,7 @@ ncat-fe - ncat based frontend tool in bash
 
 scroll down for installations
 
-PREREQUISITES:
+# PREREQUISITES:
 
 Termux (gplay is ded so get from github or f-droid - fresh install recommended)
 
@@ -20,13 +20,14 @@ internet (maybe... 500 mb of data)
 
 some storage (minimum 2 gigs if u wanna install more application)
 
-INSTALLATION:
-main script:
+# INSTALLATION:
+
+## main script:
 
 ```sh
 curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/install.sh | bash
 ```
-if you want ncat-fe alone:
+## ncat-fe alone:
 
 ```sh
  curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/ncfe-install.sh | bash
