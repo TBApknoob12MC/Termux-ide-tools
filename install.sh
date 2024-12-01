@@ -3,7 +3,7 @@ termux-setup-storage
 apt update && apt upgrade -y
 apt install zsh sl cowsay make sox ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim hexcurse git tig python3 ruby wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat 
-echo 'clear && GREEN="\e[92m"&& printf "${GREEN}" && figlet -f standard "TERMUX" && STOP="\e[0m" && printf "${STOP}" && androfetch' >> $PREFIX/bin/cls
+echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
 mkdir $HOME/.newsboat
 echo "https://howtogeek.com/feed/" >> $HOME/.newsboat/urls
