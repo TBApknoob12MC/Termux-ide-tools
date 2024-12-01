@@ -6,7 +6,9 @@ It is kind of like termux desktop, but I feel that gui ide on termux is kinda bl
 That's why I made this script (maybe cringe)
 
 Neovim with NVchad included :D
+
 ncat-fe - ncat based frontend tool in bash 
+
 scroll down for installations
 
 PREREQUISITES:
