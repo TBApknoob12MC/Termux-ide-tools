@@ -1,4 +1,4 @@
-apt update && apt install nmap figlet -y
+apt update && apt install nmap figlet wget -y
 rm -f $PREFIX/bin/ncat-fe
 mkdir $HOME/.ncat-fe
 mkdir $HOME/.ncat-fe/html
