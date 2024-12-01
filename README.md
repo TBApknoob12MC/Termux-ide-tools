@@ -6,8 +6,11 @@ It is kind of like termux desktop, but I feel that gui ide on termux is kinda bl
 That's why I made this script (maybe cringe)
 
 Neovim with NVchad included :D
+ncat-fe - ncat based frontend tool in bash 
+scroll down for installations
 
 PREREQUISITES:
+
 Termux (gplay is ded so get from github or f-droid - fresh install recommended)
 
 internet (maybe... 500 mb of data)
@@ -16,11 +19,19 @@ internet (maybe... 500 mb of data)
 some storage (minimum 2 gigs if u wanna install more application)
 
 INSTALLATION:
+main script:
+
 ```sh
 curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/install.sh | bash
 ```
+if you want ncat-fe alone:
+
+```sh
+ curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/ncfe-install.sh | bash
+```
 
 after that when oh my zsh asks about making zsh default shell,type 'y' and you are in zsh - type 'exit' to exit from the zsh or else the bash script won't continue
+after some time termux will exit
 
 after reopening type nvim 
 
