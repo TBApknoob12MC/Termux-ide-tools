@@ -1,9 +1,8 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y
-apt install zsh sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim hexcurse git tig python3 ruby golang glow wget figlet nodejs newsboat irssi lynx -y
+apt install zsh sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim hexcurse hyperfine git tig python3 ruby rust glow gum wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat
-go install github.com/charmbracelet/gum@latest
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
 mkdir $HOME/.newsboat
