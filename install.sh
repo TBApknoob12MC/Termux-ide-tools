@@ -3,7 +3,7 @@ termux-setup-storage
 apt update && apt upgrade -y
 apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim hexcurse hyperfine git tig python3 ruby rust golang glow gum swi-prolog wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat
-echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat' >> $PREFIX/bin/cls
+echo 'clear' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
 mkdir $HOME/.newsboat
 echo "https://howtogeek.com/feed/" >> $HOME/.newsboat/urls
@@ -37,7 +37,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' $HOME/.zshrc 
 wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme 
 sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
-echo "apt update && cls" >> $HOME/.zshrc
+echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat' >> $HOME/.zshrc
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
 exit
