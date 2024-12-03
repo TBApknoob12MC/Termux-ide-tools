@@ -20,8 +20,9 @@ wget git.io/trans
 chmod +x trans 
 mv trans $PREFIX/bin/trans
 git clone https://github.com/jarun/googler.git
-cd googler
-make install && cd .. && rm -rf googler
+cd googler && make install && cd .. && rm -rf googler
+git clone https://github.com/dylanaraps/fff
+cd fff && make install && cd .. && rm -rf fff
 mkdir fonts
 cd fonts 
 wget -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip 
