@@ -1,7 +1,7 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y
-apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gotty gnupg unzip neovim hexcurse hyperfine git tig python3 ruby rust golang glow gum swi-prolog wget figlet nodejs newsboat irssi lynx -y
+apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat
 echo 'clear' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
