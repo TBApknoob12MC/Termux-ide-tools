@@ -15,6 +15,8 @@ scroll down for installations
 
 Termux (gplay is ded so get from github or f-droid - fresh install recommended)
 
+vnc viewer (if a gui is needed)
+
 internet (maybe... 500 mb of data)
 
 
@@ -44,10 +46,4 @@ wait some time and then when you see nvim opening and see like 'tree-sitter : in
 
 u got a good looking ide/experiment sandbox
 
-change shell to zsh the right way: 
 
-```sh
- chsh
-```
-
-type zsh in the prompt to change shell and restart 
