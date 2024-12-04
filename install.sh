@@ -1,7 +1,7 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y && apt install x11-repo 
-apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc fluxbox neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth wget figlet nodejs newsboat irssi lynx -y
+apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat
 echo 'clear' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
@@ -38,6 +38,7 @@ sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlightin
 wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme 
 sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat && export DISPLAY=:0' >> $HOME/.zshrc
+chsh -s zsh
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
 exit
