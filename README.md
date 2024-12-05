@@ -50,22 +50,28 @@ u got a good looking ide/experiment sandbox
 
 the preinstalled desktop is lxqt
 
-to start lxqt and vncserver, type:
+to start vncserver, type:
 
 ```sh
- devnc
+ vncserver
 ```
 
 first time you run it, type a password with atleast 6 characters
 
-to stop it, type:
-
-```sh
- devnc-stop
-```
-
 connect to the desktop using a vnc viewer ( eg: rvnc viewer, bvnc viewer, nethunter kex, remmina etc.)
 
 type localhost:5901
+
+inside the vnc session type:
+
+```sh
+ startlxqt &
+```
+
+to stop it, type(inside vnc or termux):
+
+```sh
+ vncserver -kill :1
+```
 
 that's it!
