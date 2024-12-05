@@ -38,10 +38,6 @@ sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlightin
 wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme 
 sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat && export DISPLAY=:0' >> $HOME/.zshrc
-echo 'vncserver && startlxqt &' >> $PREFIX/bin/devnc
-chmod +x $PREFIX/bin/devnc 
-echo 'vncserver -kill :1' >> $PREFIX/bin/devnc-stop
-chmod +x $PREFIX/bin/devnc-stop
 chsh -s zsh
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
