@@ -53,7 +53,7 @@ the preinstalled desktop is lxqt
 to start vncserver, type:
 
 ```sh
- vncserver
+ devnc
 ```
 
 first time you run it, type a password with atleast 6 characters
@@ -62,16 +62,10 @@ connect to the desktop using a vnc viewer ( eg: rvnc viewer, bvnc viewer, nethun
 
 type localhost:5901
 
-inside the vnc session type:
-
-```sh
- startlxqt &
-```
-
 to stop it, type(inside vnc or termux):
 
 ```sh
- vncserver -kill :1
+ devnc-stop
 ```
 
 that's it!
