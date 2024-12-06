@@ -1,7 +1,7 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y && apt install x11-repo 
-apt install zsh jq fzf sl cowsay make mpv ffmpeg nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc lxqt neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth ecl lua54 espeak wget figlet nodejs newsboat irssi lynx -y
+apt install zsh jq pv rig fzf sl cowsay make mpv ffmpeg aview nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc lxqt neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth ecl lua54 espeak wget figlet nodejs newsboat irssi lynx -y
 gem install lolcat
 echo 'clear' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
@@ -39,10 +39,6 @@ wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.co
 sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
 sed -i '/vid=no/c\#vid=no' $PREFIX/etc/mpv/mpv.conf
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat && export DISPLAY=:0' >> $HOME/.zshrc
-echo 'export DISPLAY=:1 && vncserver && startlxqt &' >> $PREFIX/bin/devnc
-chmod +x $PREFIX/bin/devnc 
-echo 'vncserver -kill :1' >> $PREFIX/bin/devnc-stop
-chmod +x $PREFIX/bin/devnc-stop
 chsh -s zsh
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
