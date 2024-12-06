@@ -37,6 +37,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sed -i '/plugins=(git)/c\plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' $HOME/.zshrc 
 wget -O ~/.oh-my-zsh/themes/kali-like.zsh-theme https://raw.githubusercontent.com/clamy54/kali-like-zsh-theme/master/kali-like.zsh-theme 
 sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
+sed -i '/vid=no/c\#vid=no' $PREFIX/etc/mpv/mpv.conf
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat && export DISPLAY=:0' >> $HOME/.zshrc
 echo 'export DISPLAY=:1 && vncserver && startlxqt &' >> $PREFIX/bin/devnc
 chmod +x $PREFIX/bin/devnc 
