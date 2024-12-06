@@ -29,7 +29,7 @@ some storage (minimum 2.5 gigs if u wanna install more application)
 ```sh
 curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/install.sh | bash
 ```
-## ncat-fe alone:
+### ncat-fe alone:
 
 ```sh
  curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/ncfe-install.sh | bash
