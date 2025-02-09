@@ -1,7 +1,7 @@
 clear && echo "LET'S INSTALL"
 termux-setup-storage
 apt update && apt upgrade -y && apt install x11-repo 
-apt install zsh jq pv rig fzf sl cowsay make mpv ffmpeg aview nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc lxqt neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth ecl lua54 espeak wget figlet nodejs newsboat irssi lynx -y
+apt install zsh jq pv rig fzf sl cowsay make mpv ffmpeg aview nmap tmux proot-distro asciinema cmatrix fortune libcaca gnupg unzip tigervnc lxqt neovim hexcurse hyperfine git tig python3 ruby rust gotty glow gum swi-prolog pforth ecl lua54 espeak wget figlet nodejs php newsboat irssi lynx -y
 gem install lolcat
 echo 'clear' >> $PREFIX/bin/cls
 chmod +x $PREFIX/bin/cls
