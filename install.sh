@@ -23,9 +23,11 @@ git clone https://github.com/jarun/googler.git
 cd googler && make install && cd .. && rm -rf googler
 git clone https://github.com/dylanaraps/fff
 cd fff && make install && cd .. && rm -rf fff
+mkdir hosted && cd hosted
 git clone --depth=1 https://github.com/IrosTheBeggar/mStream.git
 git clone --depth=1 https://github.com/raneto/example
 mv example raneto
+wget -O index.php https://raw.githubusercontent.com/prasathmani/tinyfilemanager/master/tinyfilemanager.php
 mkdir fonts
 cd fonts 
 wget -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip 
@@ -43,6 +45,7 @@ sed -i '/ZSH_THEME="robbyrussell"/c\ZSH_THEME="kali-like"' $HOME/.zshrc
 sed -i '/vid=no/c\#vid=no' $PREFIX/etc/mpv/mpv.conf
 echo 'clear && figlet -f standard "TERMUX" | lolcat && androfetch | lolcat && export DISPLAY=:1' >> $HOME/.zshrc
 chsh -s zsh
+echo "tiny file manager user & passwd are admin : admin@123 and user : 12345 "
 echo "tools successfully installed. exiting in 10 secs"
 sleep 10
 exit
