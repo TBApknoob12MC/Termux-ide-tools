@@ -8,7 +8,7 @@ chmod +x $PREFIX/bin/cls
 mkdir $HOME/.newsboat
 echo "https://howtogeek.com/feed/" >> $HOME/.newsboat/urls
 pd i alpine
-curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-improver/main/ncfe-install.sh | bash
+curl -sL https://raw.githubusercontent.com/TBApknoob12MC/Termux-ide-tools/main/ncfe-install.sh | bash
 curl https://zyedidia.github.io/eget.sh | sh 
 mv eget $PREFIX/bin/eget
 curl -O https://raw.githubusercontent.com/laraib07/androfetch/main/androfetch
@@ -23,6 +23,9 @@ git clone https://github.com/jarun/googler.git
 cd googler && make install && cd .. && rm -rf googler
 git clone https://github.com/dylanaraps/fff
 cd fff && make install && cd .. && rm -rf fff
+git clone --depth=1 https://github.com/IrosTheBeggar/mStream.git
+git clone --depth=1 https://github.com/raneto/example
+mv example raneto
 mkdir fonts
 cd fonts 
 wget -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip 
