@@ -27,6 +27,7 @@ mkdir hosted && cd hosted
 git clone --depth=1 https://github.com/IrosTheBeggar/mStream.git
 git clone --depth=1 https://github.com/raneto/example
 mv example raneto
+git clone --depth=1 https://github.com/vishnusatheeshpulickal/Chat-App
 wget -O index.php https://raw.githubusercontent.com/prasathmani/tinyfilemanager/master/tinyfilemanager.php
 cd ..
 mkdir fonts
