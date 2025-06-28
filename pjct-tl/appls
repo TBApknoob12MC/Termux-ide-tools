@@ -1,0 +1,12 @@
+#!/data/data/com.termux/files/usr/bin/zsh
+source "$HOME/storage/shared/termuxlauncher/.apps-launcher"
+sesh="appls"
+if tmux has-session -t $sesh 2>/dev/null; then
+tmux attach-session -t $sesh
+else
+tmux new-session -d -s $sesh -n "appls"
+tmux split-window -h
+tmux send-keys -t 0  "zsh  $HOME/.config/appls/applist.sh" C-m
+tmux send-keys -t 1  "zsh  $HOME/.config/appls/quicklist.sh" C-m
+tmux attach-session -t $sesh
+fi

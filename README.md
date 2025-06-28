@@ -3,7 +3,7 @@ Shell scripts automating installation(and much more) of (nvchad?) things so I do
 
 It is kind of like termux desktop, but I feel that gui ide on termux is kinda bloat and nonproductive.
 
-That's why I made this script (maybe cringe)
+That's why I made this script (maybe cringe cuz its for personal use)
 
 Neovim with NVchad included :D
 
@@ -11,6 +11,7 @@ ncat-fe - ncat based frontend tool in bash
 
 scroll down for installations
 
+Note: the directory pjct-tl is a standalone project and i just put it here and is successor of the main stuff.
 # PREREQUISITES:
 
 Termux (gplay is ded so get from github or f-droid - fresh install recommended)
