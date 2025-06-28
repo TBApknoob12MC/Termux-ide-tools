@@ -2,7 +2,7 @@
 #setup storage, update package repository & install stuff
 termux-setup-storage
 apt update
-apt install wget fzf lynx git gh tmux zsh make screenfetch nnn micro -y
+apt install wget pv fzf lynx git gh tmux zsh make screenfetch nnn micro -y
 #install ohmyzsh
 curl -fsSL https://install.ohmyz.sh | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
